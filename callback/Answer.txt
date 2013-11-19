@@ -1,0 +1,19 @@
+do something here
+this callback is going to print out the result from the function `basic`
+i am the result of `do something` to be past to the callback
+--------------------------------------------------------------------------------------
+do something here
+this callback is going to print out the results from the function `callbacks_with_call`
+result1: i am result1
+result2: i am result2
+data from `callbacks_with_call`: i am some data that can be use for the callback function with `this` key word
+--------------------------------------------------------------------------------------
+do something here
+this callback is going to print out the result from the function `callbacks_with_apply`
+result1: i am result1
+result2: i am result2
+data from `callbacks_with_apply`: i am some data that can be use for the callback function with `this` key word
+--------------------------------------------------------------------------------------
+`do_a`: this takes longer than `do_b`
+`do_b`: now we can make sure `do_b` comes out after `do_a`
+
