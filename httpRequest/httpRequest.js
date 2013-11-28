@@ -3,7 +3,8 @@ var options = {
   hostname: '${proxy}',
   port: ${port},
   path: '${targetPath}',
-  method: 'GET'
+  method: 'GET',
+  headers: headers = {'${name}': '${value}'}
 };
 
 var req = http.request(options, function(res) {
