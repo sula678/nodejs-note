@@ -5,7 +5,7 @@ module.exports = {
   ring : function( callback ){
     var self = this;
  
-    this.ringing = '電話響了...';
+    this.ringing = '電話響了';
     console.log( this.ringing );
  
     callback && callback.call( this );
