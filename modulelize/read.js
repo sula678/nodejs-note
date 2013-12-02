@@ -1,20 +1,19 @@
 // require core module `file system`
 var fs = require( 'fs' );
- 
+
 // exports 2 methods for other modules or files to use
 module.exports = {
-  read : function( path, callback ){
+	read : function( path, callback ){
 
-    fs.readFile( path, function(err, datass){
-  		callback && callback( datass.toString());  
-		});
- 		
-   
-  },
- 
-  print : function( data ){
-    console.log( data );
-  }
+		fs.readFile( path, function(err, datass){
+			var array = datass.toString().split("\n");
+			callback && callback( array );
+		});	
+	},
+
+	print : function( data ){
+		console.log( data );
+	}
 };
 
 
