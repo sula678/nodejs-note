@@ -19,7 +19,7 @@ module.exports = {
   },
  
   answer_a_phone_call : function(){
-    var action = this.ringing === '電話響了...' ?
+    var action = this.ringing === '電話響了' ?
         '我接了這通電話' : '我錯過了這通電話';
  
       console.log( action );
@@ -34,7 +34,7 @@ module.exports = {
  
     setTimeout( function(){
       self.cup_noodles = self.cup_noodles === '泡麵煮好了' ?
-        '我吃完了' : '我啥都沒吃到...'
+        '我吃完了' : '我啥都沒吃到'
  
       console.log( self.cup_noodles );
  

@@ -10,7 +10,7 @@ module.exports = {
     callback && callback.call( this );
  
     this.action = this.pants === 'On' ?
-      '尿在褲子上' : '尿尿中...';
+      '尿在褲子上' : '尿尿中';
  
     console.log( this.action );
  
