@@ -21,6 +21,10 @@ function iterator(i) {
 			        throw err;
 			    }
 			    console.log('series all done. ' + results);
+			    haha(2, 3, function(err, srcsrc2){
+					if(err) console.log(err);
+					console.log(srcsrc2);
+				})
 			});
 			
 		} else {			
@@ -40,3 +44,14 @@ function delayedPrint(delay, text, result) {
 }
 
 iterator(0);
+
+
+
+haha = function (src, src2, callback) {
+	setTimeout(function() {
+		console.log("1: " + src);
+		console.log("2: " + src2);
+		callback && callback(null, src + src2);
+	}, 2000);
+}
+
